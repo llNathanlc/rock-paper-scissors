@@ -23,7 +23,7 @@ function playRound(computer, player) {
     else if (computer == "scissors" && player == "paper") { return "Lose"; }
     else if (computer == "scissors" && player == "scissors") { return "Tie"; }
     else if (computer == "scissors" && player == "rock") { return "Win"; }
-    else { console.log("invalid input"); }
+    else { console.log("Error"); }
 
 }
 
@@ -36,6 +36,7 @@ function game() {
         let playerChoice = getPlayerChoice().toLowerCase();
         let gameState = playRound(computerChoice, playerChoice);
         
+         
         console.log("Round : " + (i + 1));
         console.log("The computer chosed : " + computerChoice);
         console.log("You chosed : " + playerChoice);
@@ -62,12 +63,14 @@ function game() {
             console.log("The player score is: " + playerScore);
             console.log("------------------------------------");
         }
+        else{ console.log("Invalid input, skipping round");}
+        console.log("------------------------------------")
     }
 
     if (playerScore > computerScore) { console.log("You won the match!"); }
-    else if (playerScore == computerScore) {console.log("Its a tie!");}
-    else if(playerScore < computerScore){console.log("You lost :(");}
-    console.log("------------------------------------")
+    else if (playerScore == computerScore) { console.log("Its a tie!"); }
+    else if (playerScore < computerScore) { console.log("You lost :("); }
+    console.log("------------------------------------");
 }
 
 game();
