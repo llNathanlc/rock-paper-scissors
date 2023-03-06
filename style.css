@@ -1,0 +1,73 @@
+body{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;   
+    text-align: left;
+}
+.buttons{
+    margin-top:50px;
+    display: flex;
+    gap: 10px;
+}
+#rock, #paper, #scissors, #restart{
+    font-family: Roboto, sans-serif;
+    border: none;
+    color:gold;
+    background-color: crimson;
+    transition: all .07s ease;
+    border-radius: 8px;
+    padding:9px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#restart{
+    color:rgb(192, 38, 64);
+    background-color: gold;
+    margin-right:30px;
+}
+.mouseOver {
+    transform: scale(1.2);
+    border-color: #0a0905;
+    box-shadow: 0 0 1rem #030002;
+}
+.clicked {
+    transform: scale(0.8);
+}
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    border: rgb(223, 80, 199) 40px solid;
+    border-radius: 50px;
+    border-style:double;
+    background-color: rgb(241, 218, 230);
+    padding:30px 50px 30px 50px;
+    font-size: larger;
+}
+#round{
+    font-size:x-large;
+}
+#round, #whoWon{
+    font-weight: bolder;
+}
+.middle{
+    display: flex;
+    gap : 40px;
+    font-style: italic;
+    text-align: right;
+}
+.leftcolumn, .rightcolumn{
+    display:flex;
+    gap:10px;
+}
+.choices, .numbers{
+    font-weight: bolder;
+    text-align: left;
+}
+.numbers{
+    font-size: 23px;
+}
