@@ -9,3 +9,5 @@ Later on this project will be updated with a proper interface.
 -----
 
 After having a deeper understanding of the Javascript language, I added a visual interface to the game.
+
+[live version](https://llnathanlc.github.io/rock-paper-scissors/)
